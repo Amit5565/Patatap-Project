@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="Circles.css">
+  <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="paper-full.js"></script>
+  <script type="text/paperscript" canvas="canvas">
+
+   //Creating multiple Circles
+   var count=0;
+   while(count<10)
+   {
+     for(var i=0;i<10;i++)
+    {
+      var circle1=new Path.Circle(new Point(100*i,100*count),10);
+      circle1.fillColor="purple";
+    }
+    count++;
+  }
+
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Excercise</title>
+</head>
+
+<body>
+  <canvas id="canvas" resize></canvas>
+
+</body>
+
+</html>
